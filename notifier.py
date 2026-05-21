@@ -52,7 +52,7 @@ ASSET_THUMBNAILS_URL = "https://thumbnails.roblox.com/v1/assets"
 USER_HEADSHOT_URL = "https://thumbnails.roblox.com/v1/users/avatar-headshot"
 ROBLOX_PROFILE_URL = "https://www.roblox.com/users/{user_id}/profile"
 TRADE_PAGE_URL = "https://www.roblox.com/trades#/{trade_id}"
-CONTACT_URL = "https://github.com/pipelinear/roblox-trade-notifier/tree/main"
+CONTACT_URL = "https://discord.gg/d6gm5j5eG8"
 
 ENV_FILE = Path(".env")
 WEBHOOKS_FILE = Path("webhooks.json")
@@ -608,9 +608,9 @@ def prompt_for_basic_settings(values: Dict[str, str]) -> Dict[str, str]:
 
     print()
     print("  Timezone setup is now easier:")
-    print("  Type your phone area code, like 805, 310, 212, etc.")
+    print("  Type your phone area code, like 90210, 310, 212, etc.")
     print("  Bloxware maps it to a timezone for prettier trade timestamps.")
-    area = input("Area code [805]: ").strip() or "805"
+    area = input("Area code [90210]: ").strip() or "90210"
     values["LOCAL_TIMEZONE"] = area_code_to_timezone(area)
     print(c(f"Timezone set to {values['LOCAL_TIMEZONE']} from area code {area}.", Term.GREEN))
 
@@ -2966,7 +2966,7 @@ def main_menu() -> None:
             pause()
 
         elif choice == "9":
-            print(c("bye - made by lomi", Term.MAGENTA))
+            print(c("happy trading!", Term.MAGENTA))
             return
 
 
