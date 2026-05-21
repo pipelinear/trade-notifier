@@ -100,7 +100,7 @@ Bloxware now requires admin/root permissions before it runs.
 5. Go to the notifier folder:
 
 ```bat
-cd /d "%USERPROFILE%\Downloads\bloxware_trade_notifier_v17"
+cd /d "%USERPROFILE%\Downloads\trade-notifier-main"
 ```
 
 6. Run:
