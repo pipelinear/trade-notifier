@@ -2,11 +2,11 @@
 
 **Discord + Slack Roblox trade notifier — made by lomi**
 
-Bloxware Trade Notifier is a local-only notifier for Roblox inbound trades. It can send rich Discord trade cards, detailed Slack alerts, optional Slack PNG panels, and it also has a built-in terminal trade panel so you can view trades without opening Discord or Slack.
+Bloxware Trade Notifier is a notifier for Roblox inbound trades. It can send rich Discord trade cards, detailed Slack alerts, optional Slack PNG panels, and it also has a built-in terminal trade panel so you can view trades without opening Discord or Slack. While its original use is to alert you for inbound trades so you dont miss any, I added some more features that some may consider unnecessary.
 
 ---
 
-## What it can do
+## What it can do ❗
 
 ### Trade scanning
 - Scans current inbound Roblox trades.
@@ -39,12 +39,12 @@ Bloxware Trade Notifier is a local-only notifier for Roblox inbound trades. It c
 - Slack is good for iPhone notifications.
 - Discord is still best for the full visual layout.
 
-### Terminal panel
+### Terminal panel 🧑‍💻
 - View current inbound trades directly from the program.
 - View declined/status history.
 - See profit, values, projected warnings, and trade links in the terminal.
 
-### Safety
+### Safety 🛟
 - `.env` is created locally if missing.
 - The program asks you for missing setup info.
 - No `.env`, webhooks, or saved state files are included in this zip.
@@ -52,7 +52,7 @@ Bloxware Trade Notifier is a local-only notifier for Roblox inbound trades. It c
 
 ---
 
-## First setup
+## First setup 📐
 
 ### 1. Install requirements
 
@@ -70,12 +70,11 @@ python notifier.py
 
 If there is no `.env`, Bloxware starts a first-run setup wizard:
 
-1. A red joke screen says **"You've been hacked!"**
-2. After Enter, it reveals it is kidding and explains that setup is missing.
-3. It creates a local `.env`.
-4. It walks you through the Roblox cookie, basic settings, and notification setup.
-5. It validates the cookie against Roblox before continuing.
-6. It shows progress bars as you complete each step.
+1. A red screen that literally, logs your data.
+2. It creates a local `.env`.
+3. It walks you through the Roblox cookie, basic settings, and notification setup.
+4. It validates the cookie against Roblox before continuing.
+5. It shows progress bars as you complete each step.
 
 Cookie format check:
 - If the pasted value starts with Roblox's `.ROBLOSECURITY` warning prefix, it says **Cookie pasted!**
@@ -101,7 +100,7 @@ Bloxware now requires admin/root permissions before it runs.
 5. Go to the notifier folder:
 
 ```bat
-cd "C:\Users\nicky\Downloads\bloxware_trade_notifier_v17"
+cd /d "%USERPROFILE%\Downloads\bloxware_trade_notifier_v17"
 ```
 
 6. Run:
@@ -286,11 +285,9 @@ made by lomi
 
 ---
 
-## V14 updates
+## Beta-1 updates
 
-- First-run setup has a red joke screen followed by a required typed confirmation.
-- Confirmation phrase is: `yes lomi, create my env file`.
-- Cookie input is visible while typing/pasting.
+- Confirmation phrase added
 - Cookie format is checked first, then validated with Roblox immediately.
 - Trade detail fetch retries up to 3 times before skipping.
 - Terrible trades under 40% of your outgoing value get a clear warning.
@@ -300,13 +297,11 @@ made by lomi
 
 ---
 
-## V15 updates
+## Beata-2 updates
 
 - Live mode uses one updating progress line instead of stacking a new bar every check.
 - You can start the scanner in the background and return to the home menu.
 - First-run red screen fills the terminal and runs longer diagnostic-style output.
-- Setup confirmation uses a neutral typed phrase: `yes lomi, i have read your message. please create the env file for me`
-- Setup progress no longer duplicates the subtitle line.
 - Slack test asks whether the message actually arrived and lets you paste a different webhook URL if it did not.
 - Slack/Discord send status is reported separately.
 - Trade panel description now clearly includes analytics.
@@ -316,7 +311,7 @@ made by lomi
 
 ---
 
-## V16 updates
+## Beta-3 updates
 
 - Setup uses one progress bar at the top only.
 - Setup asks for an area code and maps it to a timezone.
@@ -329,8 +324,6 @@ made by lomi
 
 ---
 
-## V17 update
+## V1 update - release
 
-- The notifier now requires admin/root permissions to run.
-- If it is not run as admin, it stops immediately with a clear tutorial.
 - README now includes a simple Windows and macOS/Linux admin setup guide.
