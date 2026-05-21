@@ -1,4 +1,4 @@
-# 🟦 Bloxware Trade Notifier V17
+# 🟦 Bloxware Trade Notifier V1
 
 **Discord + Slack Roblox trade notifier — made by lomi**
 
