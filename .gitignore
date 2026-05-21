@@ -1,0 +1,10 @@
+.env
+*.env
+webhooks.json
+seen_trades.json
+active_inbound_ids.json
+declined_trade_history.json
+__pycache__/
+*.pyc
+.venv/
+venv/
