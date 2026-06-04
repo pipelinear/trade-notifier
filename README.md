@@ -1,3 +1,6 @@
+# Pre-message for those who are reading:
+The trade notifier has gone through extensive updates since V1, making it much more reliable, more information, better notifications. It will be releasing very soon, as long as I remember to push it..
+
 # 🟦 Bloxware Trade Notifier V1
 
 **Discord + Slack Roblox trade notifier — made by lomi**
